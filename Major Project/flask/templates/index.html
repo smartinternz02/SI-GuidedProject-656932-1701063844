@@ -1,0 +1,330 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Page</title>
+    <style>
+      body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+a {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    color: #333;
+    text-decoration: none;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Prediction Page</h1>
+    <form method="post" action="/out">
+        <label for="AGE">AGE:</label>
+        <input type="text" name="AGE" required>
+        
+        <label for="Gender">Gender:</label>
+        <input type="text" name="Gender" required>
+
+        <label for="Place">Place (Location where the patient lives):</label>
+        <input type="text" name="Place (Location where the patient lives)" required>
+
+        <label for="Duration_of_alcohol_consumption">Duration of alcohol consumption:</label>
+        <input type="text" name="Duration of alcohol consumption" required>
+
+        <label for="Quantity_of_alcohol_consumption">Quantity of alcohol consumption:</label>
+        <input type="text" name="Quantity of alcohol consumption" required>
+
+        <label for="Type_of_alcohol_consumed">Type of alcohol consumed:</label>
+        <input type="text" name="Type of alcohol consumed" required>
+
+        <label for="Blood_pressure">Blood pressure (mmhg):</label>
+        <input type="text" name="Blood pressure (mmhg)" required>
+
+        <label for="Obesity">Obesity:</label>
+        <input type="text" name="Obesity" required>
+
+        <label for="Family_history_of_cirrhosis_hereditary">Family history of cirrhosis:</label>
+        <input type="text" name="Family history of cirrhosis" required>
+
+        <label for="Hemoglobin">Hemoglobin (g/dL):</label>
+        <input type="text" name="Hemoglobin (g/dL)" required>
+
+        <label for="PCV">PCV (X):</label>
+        <input type="text" name="PCV (X)" required>
+
+        <label for="RBC">RBC (million cells/microliter):</label>
+        <input type="text" name="RBC (million cells/microliter)" required>
+
+        <label for="MCV">MCV (femtoliters/cell):</label>
+        <input type="text" name="MCV (femtoliters/cell)" required>
+
+        <label for="MCH">MCH (picograms/cell):</label>
+        <input type="text" name="MCH (picograms/cell)" required>
+
+        <label for="MCHC">MCHC (grams/deciliter):</label>
+        <input type="text" name="MCHC (grams/deciliter)" required>
+
+        <label for="Total_Count">Total Count:</label>
+        <input type="text" name="Total Count" required>
+
+        <label for="Polymorphs">Polymorphs (X):</label>
+        <input type="text" name="Polymorphs (X)" required>
+
+        <label for="Lymphocytes">Lymphocytes (X):</label>
+        <input type="text" name="Lymphocytes (X)" required>
+
+        <label for="Monocytes">Monocytes (X):</label>
+        <input type="text" name="Monocytes (X)" required>
+
+        <label for="Eosinophils">Eosinophils (X):</label>
+        <input type="text" name="Eosinophils (X)" required>
+        <label for="Basophils">Basophils (%):</label>
+        <input type="text" name="Basophils (%)" required>
+
+
+        <label for="PlateletCount">Platelet Count (lakhs/mm):</label>
+        <input type="text" name="Platelet Count (lakhs/mm)" required>
+
+        <label for="Direct">Direct:</label>
+        <input type="text" name="Direct    (mg/dl)" required>
+
+        <label for="Indirect">Indirect (mg/dl):</label>
+        <input type="text" name="Indirect     (mg/dl)" required>
+
+        <label for="TotalProtein">Total Protein (g/dl):</label>
+        <input type="text" name="Total Protein     (g/dl)" required>
+
+        <label for="Albumin">Albumin (g/dl):</label>
+        <input type="text" name="Albumin   (g/dl)" required>
+
+        <label for="Globulin">Globulin (g/dl):</label>
+        <input type="text" name="Globulin  (g/dl)" required>
+
+        <label for="ALPhosphatase">AL.Phosphatase (U/L):</label>
+        <input type="text" name="AL.Phosphatase      (U/L)" required>
+
+        <label for="SGOTAST">SGOT/AST (U/L):</label>
+        <input type="text" name="SGOT/AST      (U/L)" required>
+
+        <label for="USGAbdomen">USG Abdomen (diffuse liver or not):</label>
+        <input type="text" name="USG Abdomen (diffuse liver or  not)" required>
+
+        <label for="Outcome">Outcome:</label>
+        <input type="text" name="Predicted Value(Out Come-Patient suffering from liver  cirrosis or not)" required>
+
+        <button type="submit">Predict</button>
+    </form>
+    <a href="/">Go to Home Page</a>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Page</title>
+    <style>
+      body {
+    font-family: Arial, sans-serif;
+    
+    background-color: #a06fc1;
+    height: 100vh;
+    background-size: cover;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    
+}
+
+h1 {
+    text-align: center;
+    /* color: #333; */
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color:rgba(23, 25, 50, 0.4);
+    padding: 20px;
+    
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color:white;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+
+button:hover {
+    background-color: #45a049;
+}
+button{
+    margin-left: 45%;
+}
+a {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    color: #333;
+    text-decoration: none;
+}
+
+.form-group {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .form-group label,
+        .form-group input {
+            flex: 0 0 48%; /* Adjust width as needed */
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Prediction Page</h1>
+    <form method="post" action="/out">
+        <div class="form-group">
+        <label for="Drug">Drug:</label>
+        <input type="text" name="Drug" required>
+        </div>
+        <div class="form-group">
+        <label for="Sex">Sex:</label>
+        <input type="text" name="Sex" required>
+            </div>
+            <div class="form-group">
+        <label for="Ascites">Ascites:</label>
+        <input type="text" name="Ascites" required>
+            </div>
+            <div class="form-group">
+        <label for="Hepatomegaly">Hepatomegaly:</label>
+        <input type="text" name="Hepatomegaly" required>
+            </div>
+            <div class="form-group">
+        <label for="Spiders">Spiders:</label>
+        <input type="text" name="Spiders" required>
+            </div>
+            <div class="form-group">
+        <label for="Edema">Edema:</label>
+        <input type="text" name="Edema" required>
+            </div>
+            <div class="form-group">
+        <label for="Age">Age:</label>
+        <input type="text" name="Age" required>
+            </div>
+            <div class="form-group">
+        <label for="Bilirubin">Bilirubin:</label>
+        <input type="text" name="Bilirubin" required>
+            </div>
+            <div class="form-group">
+        <label for="Cholesterol">Cholesterol:</label>
+        <input type="text" name="Cholesterol" required>
+            </div>
+            <div class="form-group">
+        <label for="Albumin">Albumin:</label>
+        <input type="text" name="Albumin" required>
+            </div>
+            <div class="form-group">
+        <label for="Copper">Copper:</label>
+        <input type="text" name="Copper" required>
+            </div>
+            <div class="form-group">
+        <label for="Alk_Phos">Alk_Phos:</label>
+        <input type="text" name="Alk_Phos" required>
+            </div>
+            <div class="form-group">
+        <label for="SGOT">SGOT:</label>
+        <input type="text" name="SGOT" required>
+            </div>
+            <div class="form-group">
+        <label for="Tryglicerides">Tryglicerides:</label>
+        <input type="text" name="Tryglicerides" required>
+            </div>
+            <div class="form-group">
+        <label for="Platelets">Platelets:</label>
+        <input type="text" name="Platelets" required>
+            </div>
+            <div class="form-group">
+        <label for="Prothrombin">Prothrombin:</label>
+        <input type="text" name="Prothrombin" required>
+            </div>
+            <div class="form-group">
+        <label for="Stage">Stage:</label>
+        <input type="text" name="Stage" required>
+        </div>
+        <button type="submit">Predict</button>
+    </div>
+    </form>
+    <a href="/">Go to Home Page</a>
+</body>
+</html>
